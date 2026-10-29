@@ -1,0 +1,22 @@
+{
+  "name": "nth-qrcode-converter-pro",
+  "version": "1.0.0",
+  "description": "Công cụ chuyển đổi mã QR diện mạo và Trạm Thiết Kế Nghịch Thủy Hàn từ bản Trung sang VNG",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "nghich-thuy-han",
+    "justice-mobile",
+    "qrcode-converter",
+    "vng",
+    "netease"
+  ],
+  "author": "Antigravity Engineering",
+  "license": "MIT",
+  "dependencies": {
+    "qrcode": "^1.5.4"
+  }
+}

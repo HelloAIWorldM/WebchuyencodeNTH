@@ -1,0 +1,7 @@
+node_modules
+.vercel
+.env
+.env.local
+.ag_buf.txt
+*.log
+AGENTS.md

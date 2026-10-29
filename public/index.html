@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Công cụ chuyển đổi mã QR diện mạo, trang điểm, màu tóc, màu áo và màu quần Nghịch Thủy Hàn từ bản TRUNG sang VNG Games PC & Mobile chuẩn xác 100%.">
+  <title>NGHỊCH THỦY HÀN STUDIO • HAUTE COUTURE PRESET ATELIER</title>
+  
+  <!-- Google Fonts: EB Garamond, Plus Jakarta Sans, Be Vietnam Pro, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=JetBrains+Mono:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/jpeg" href="/img/logo.jpg">
+  <link rel="stylesheet" href="/css/style.css?v=luxury_v4">
+</head>
+<body>
+
+  <!-- Top Sticky Navigation Bar -->
+  <header class="topbar">
+    <div class="container topbar-content">
+      <div class="brand">
+        <!-- Character Logo Emblem (Vy Lì - Niên Du) -->
+        <div class="brand-logo-frame" title="Vy Lì - Niên Du">
+          <img src="/img/logo.jpg" alt="Logo Vy Lì - Niên Du" class="brand-logo-img">
+          <span class="logo-corner logo-corner-tl"></span>
+          <span class="logo-corner logo-corner-tr"></span>
+          <span class="logo-corner logo-corner-bl"></span>
+          <span class="logo-corner logo-corner-br"></span>
+        </div>
+        <div class="brand-text">
+          <div class="brand-title-wrap">
+            <h1>NGHỊCH THỦY HÀN STUDIO</h1>
+            <span class="brand-badge">HAUTE COUTURE</span>
+          </div>
+          <span class="brand-sub">BỘ CHUYỂN ĐỔI MÃ DIỆN MẠO CHUẨN CLIENT VNG</span>
+        </div>
+      </div>
+
+      <div class="topbar-actions">
+        <div class="status-pill">
+          <div class="status-signal">
+            <span class="status-dot" id="status-dot"></span>
+            <span class="status-text" id="status-text">Đang kết nối...</span>
+          </div>
+          <span class="status-divider">|</span>
+          <span class="status-latency">VNG READY</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-content">
+      <div class="hero-main">
+        <div class="hero-label">
+          <span class="hero-label-bar"></span>
+          <span class="hero-label-text">DIỆN MẠO HOÀNG KIM • ATELIER DE HAUTE COUTURE</span>
+        </div>
+        <h2 class="hero-title">
+          <span class="hero-title-line">CHUYỂN ĐỔI MÃ DIỆN MẠO <span class="gold-highlight">BẢN TRUNG</span></span>
+          <span class="hero-title-line">SANG CHUẨN QR <span class="gold-highlight">VNG GAMES</span></span>
+        </h2>
+        <p class="hero-desc">
+          Giải mã thông số cốt cách 49 tầng cấu trúc diện mạo. Đồng bộ hóa chuyển đổi đa nền tảng PC &amp; Mobile, bảo toàn nguyên bản nét thanh tú và xuất mã QR chuẩn xác 100% cho máy chủ VNG.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mode Selector Navigation Bar (Zero Icons) -->
+  <section class="mode-bar-section">
+    <div class="container mode-bar-content">
+      <div class="mode-chips-wrap">
+        <button class="mode-chip active" data-mode="face" type="button">
+          <span class="chip-diamond"></span>
+          <span>KHUÔN MẶT</span>
+        </button>
+        <button class="mode-chip" data-mode="makeup" type="button">
+          <span class="chip-diamond"></span>
+          <span>TRANG ĐIỂM</span>
+        </button>
+        <button class="mode-chip" data-mode="hair" type="button">
+          <span class="chip-diamond"></span>
+          <span>MÀU TÓC</span>
+        </button>
+        <button class="mode-chip" data-mode="top" type="button">
+          <span class="chip-diamond"></span>
+          <span>MÀU ÁO</span>
+        </button>
+        <button class="mode-chip" data-mode="bottom" type="button">
+          <span class="chip-diamond"></span>
+          <span>MÀU QUẦN</span>
+        </button>
+        <button class="mode-chip" data-mode="photo" type="button">
+          <span class="chip-diamond"></span>
+          <span>NHIẾP ẢNH</span>
+        </button>
+      </div>
+      <div class="mode-hint-tag">
+        CHUYỂN ĐỔI CHUẨN XÁC 100% THEO TỪNG DANH MỤC
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN 2-COLUMN LUXURY WORKSPACE -->
+  <main class="main-workspace container" id="converter-section">
+    <div class="workspace-grid">
+      
+      <!-- CỘT 1: KHUNG NHẬP LIỆU (Input Terminal) -->
+      <section class="atelier-card">
+        <div class="corner-filigree filigree-tl"></div>
+        <div class="corner-filigree filigree-tr"></div>
+        <div class="corner-filigree filigree-bl"></div>
+        <div class="corner-filigree filigree-br"></div>
+
+        <div class="card-header-bar">
+          <div class="card-title-group">
+            <span class="card-title-diamond"></span>
+            <h3 class="card-title">KHUNG NHẬP LIỆU</h3>
+          </div>
+          <span class="card-badge-pill">TERMINAL 01</span>
+        </div>
+
+        <div class="card-body">
+          <!-- Chọn thiết bị VNG đích -->
+          <div class="form-field-group">
+            <div class="field-label-meta">
+              <span>NỀN TẢNG THIẾT BỊ MỤC TIÊU</span>
+              <span>CLIENT SELECTION</span>
+            </div>
+            <div class="platform-switch-grid">
+              <button class="client-tab active" data-client="vng_pc" type="button">
+                <span class="tab-diamond"></span>
+                <span>VNG PC CLIENT</span>
+              </button>
+              <button class="client-tab" data-client="vng_mobile" type="button">
+                <span class="tab-diamond"></span>
+                <span>VNG MOBILE</span>
+              </button>
+            </div>
+            <small class="field-subhint">Hệ thống tự động tinh chỉnh phản quang mắt và nén cấu trúc thông số riêng biệt cho từng nền tảng.</small>
+          </div>
+
+          <!-- Tab nguồn nhập liệu: Link vs Tệp ảnh QR -->
+          <div class="input-tabs-bar">
+            <button class="input-tab active" data-tab="text" type="button">
+              LIÊN KẾT / MÃ ID
+            </button>
+            <button class="input-tab" data-tab="image" type="button">
+              TỆP ẢNH QR
+            </button>
+          </div>
+
+          <!-- Tab Dán Link -->
+          <div id="text-input-wrap" class="textarea-wrapper">
+            <div class="field-label-meta">
+              <span>CHUỖI DỮ LIỆU BẢN TRUNG (SHARE URL HOẶC ID)</span>
+              <span>HEX / PLAIN ENCRYPTED</span>
+            </div>
+            <textarea id="share-input" class="input-field" spellcheck="false" placeholder="Dán link chia sẻ hoặc mã ID bản Trung (VD: 160825426)..."></textarea>
+            <div class="input-helper-bar">
+              <span>Hỗ trợ dán toàn bộ văn bản chia sẻ tiếng Trung</span>
+              <button class="sample-btn" id="sample-btn" type="button">ID MẪU: 160825426</button>
+            </div>
+          </div>
+
+          <!-- Tab Ảnh QR -->
+          <div id="image-input-wrap" class="hidden">
+            <input type="file" id="qr-file-input" accept="image/png,image/jpeg,image/webp" class="hidden" aria-label="Tải lên ảnh chứa mã QR">
+            
+            <div class="dropzone" id="dropzone">
+              <div class="dropzone-seal">
+                <div class="dropzone-seal-diamond"></div>
+              </div>
+              <div class="dropzone-headline">KÉO THẢ HOẶC CHỌN ẢNH QR</div>
+              <div class="dropzone-hint">ĐỊNH DẠNG PNG, JPG, WEBP • NHẬN DÁN TRỰC TIẾP QUA CTRL + V</div>
+            </div>
+
+            <div class="file-preview hidden" id="file-preview-box">
+              <img id="file-thumb" src="" alt="Ảnh QR tải lên">
+              <div class="file-info">
+                <strong id="file-name">tep_anh.png</strong>
+                <span id="file-size">120 KB</span>
+              </div>
+              <button class="btn-remove-file" id="remove-file-btn" type="button">BỎ ẢNH</button>
+            </div>
+          </div>
+
+          <!-- Tuỳ chọn Nhuộm (Dye options) -->
+          <div class="dye-options hidden" id="dye-options-box">
+            <legend>PHƯƠNG THỨC CHIẾT XUẤT BẢNG MÀU</legend>
+            <div class="radio-group">
+              <label class="radio-label">
+                <input type="radio" name="dye_mode" value="default" checked>
+                <span>Mẫu cơ bản (Trích xuất toàn bộ mã màu RGBA)</span>
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="dye_mode" value="exact">
+                <span>Giữ nguyên trang phục gốc (Yêu cầu đã sở hữu vật phẩm)</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Nút hành động CTA -->
+          <button class="btn-primary-cta" id="convert-btn" type="button">
+            <span class="btn-cta-diamond"></span>
+            <span>CHUYỂN ĐỔI MÃ DIỆN MẠO SANG VNG</span>
+            <span class="btn-cta-diamond"></span>
+          </button>
+
+          <!-- Thẻ lưu ý giải mã -->
+          <div class="notice-card atelier-card">
+            <span class="notice-badge">CHUẨN VNG</span>
+            <p class="notice-text">
+              Dữ liệu sau khi mã hoá tương thích tuyệt đối với Client VNG chính thức. Nếu mẫu gốc có tỷ lệ xương khác biệt, hệ thống tự động cân chỉnh độ dốc thanh trượt hoàn hảo.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CỘT 2: STUDIO KẾT QUẢ & GIẢI MÃ (Result Studio) -->
+      <section class="atelier-card" id="result-card">
+        <div class="corner-filigree filigree-tl"></div>
+        <div class="corner-filigree filigree-tr"></div>
+        <div class="corner-filigree filigree-bl"></div>
+        <div class="corner-filigree filigree-br"></div>
+
+        <div class="card-header-bar">
+          <div class="card-title-group">
+            <span class="card-title-diamond diamond-jade"></span>
+            <h3 class="card-title">STUDIO KẾT QUẢ &amp; GIẢI MÃ</h3>
+          </div>
+          <span class="card-badge-pill">DECRYPTED STUDIO</span>
+        </div>
+
+        <div class="card-body">
+          <!-- Trạng thái chờ (Empty State) -->
+          <div class="empty-state" id="empty-state-box">
+            <div class="empty-state-seal">
+              <div class="empty-state-seal-inner"></div>
+            </div>
+            <h3>MÃ QR SẼ XUẤT HIỆN TẠI ĐÂY</h3>
+            <p>Vui lòng nhập liên kết hoặc tải ảnh QR bản Trung tại Khung Nhập Liệu rồi bấm bắt đầu chuyển đổi.</p>
+          </div>
+
+          <!-- Trạng thái đang tải (Loading State) -->
+          <div class="loading-state hidden" id="loading-state-box">
+            <div class="spinner"></div>
+            <h3>ĐANG PHÂN TÍCH &amp; CHUYỂN ĐỔI DIỆN MẠO...</h3>
+            <p class="loading-desc">
+              Đang giải mã thông số thanh trượt, đối chiếu mô hình nhân vật và tạo mã QR chuẩn VNG...
+            </p>
+          </div>
+
+          <!-- Nội dung kết quả (Result Content) -->
+          <div id="result-content-box" class="result-content-layout hidden">
+            <div class="res-header-panel">
+              <div class="res-title-wrap">
+                <span class="res-category-tag">PRESET METADATA</span>
+                <h4 id="res-title" class="res-heading-title">Diện mạo #160825426</h4>
+                <p id="res-meta" class="res-heading-meta">Nữ · Chuẩn VNG PC &amp; Mobile</p>
+              </div>
+              <div class="res-badge-cluster">
+                <span class="badge-jade">CHUẨN XÁC 100%</span>
+              </div>
+            </div>
+
+            <!-- Khung chỉ dẫn Khung Xương Bắt Buộc (Model Matcher) -->
+            <div class="model-guidance-card" id="model-guidance-box">
+              <div class="model-badge-header">
+                <div class="model-title-wrap">
+                  <span class="model-sub">KHUNG XƯƠNG NHÂN VẬT BẮT BUỘC</span>
+                  <div class="model-target-name" id="model-target-name">Nữ · Model 05 (Thanh tú / Cằm thon)</div>
+                </div>
+                <span class="match-status-pill pill-success" id="model-match-pill">Khớp Chuẩn 100% Model</span>
+              </div>
+              <p class="model-tip-text" id="model-tip-desc">
+                Lưu ý quan trọng: Tại màn hình tạo nhân vật VNG, hãy chọn đúng khuôn mặt <strong>Model 05</strong> trước khi quét QR để không bị méo mặt hoặc lệch hốc mắt!
+              </p>
+            </div>
+
+            <!-- Báo cáo tương thích & Thay thế lớp bản quyền -->
+            <div class="compat-alerts-box hidden" id="compat-alerts-wrap">
+              <div class="compat-header">BÁO CÁO TƯƠNG THÍCH &amp; THAY THẾ LỚP BẢN QUYỀN VNG</div>
+              <ul class="compat-list" id="compat-list-items"></ul>
+            </div>
+
+            <!-- Mẹo cân chỉnh ánh sáng & tông da -->
+            <div class="skin-tuning-card hidden" id="skin-tuning-box">
+              <div class="skin-tuning-text">
+                <strong>MẸO CÂN CHỈNH ÁNH SÁNG VNG:</strong>
+                <span id="skin-tuning-desc">Tông da đã được lượng tử hóa hài hòa.</span>
+              </div>
+            </div>
+
+            <!-- Centerpiece Luxury QR Frame -->
+            <div class="qr-result-box" id="res-qr-box">
+              <div class="qr-frame-outer">
+                <div class="qr-frame-inner" id="qr-img-wrap">
+                  <div id="qr-render-target"></div>
+                  <img id="res-qr-img" src="" alt="Mã QR VNG" class="hidden">
+                </div>
+              </div>
+              <div class="qr-meta-bar">ĐỘ PHÂN GIẢI CAO • QUÉT TRỰC TIẾP CLIENT VNG</div>
+              <h4 class="qr-title" id="res-qr-title">MÃ QR ĐÃ SẴN SÀNG NHẬP GAME</h4>
+              <p class="qr-desc" id="res-qr-desc">
+                Mở Nghịch Thủy Hàn VNG trên PC hoặc Mobile, vào mục Nhập Khuôn Mặt và chọn ảnh QR vừa tải.
+              </p>
+              <div class="qr-actions">
+                <a class="btn-luxury-primary" id="download-qr-btn" download="NTH_VNG_QR.png">
+                  TẢI ẢNH QR (PNG)
+                </a>
+                <button class="btn-luxury-secondary" id="copy-qr-link-btn" type="button">
+                  SAO CHÉP LIÊN KẾT
+                </button>
+                <a class="btn-luxury-secondary hidden" id="download-payload-btn" download>
+                  TẢI FILE TEXT
+                </a>
+              </div>
+            </div>
+
+            <!-- Bảng màu nhuộm nếu có -->
+            <div id="res-dye-box" class="dye-result-section hidden">
+              <h4 class="dye-heading-title">BẢNG MÃ MÀU RGBA (BẤM ĐỂ SAO CHÉP)</h4>
+              <div class="dye-grid" id="res-dye-list"></div>
+            </div>
+
+            <!-- Accordion chi tiết thông số -->
+            <details class="tech-details">
+              <summary>CHI TIẾT 49+ THÔNG SỐ ĐÃ HIỆU CHỈNH (<span id="stats-converted-count">0</span> đổi, <span id="stats-quantized-count">0</span> làm tròn)</summary>
+              <div class="tech-content">
+                <table class="slider-table">
+                  <thead>
+                    <tr>
+                      <th>Thông Số</th>
+                      <th>Bản Gốc TRUNG</th>
+                      <th>Chuẩn VNG</th>
+                    </tr>
+                  </thead>
+                  <tbody id="res-fields-tbody"></tbody>
+                </table>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">Thông báo</div>
+
+  <!-- Editorial Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-brand">
+        NGHỊCH THỦY HÀN STUDIO • HAUTE COUTURE ATELIER
+      </div>
+      <div class="footer-meta">
+        BẢN QUYỀN BỞI <span class="gold-name">VY LÌ - NIÊN DU</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- QR Code Generator Library -->
+  <script src="/js/qrcode.min.js"></script>
+  <!-- Main Application Script -->
+  <script src="/js/app.js?v=luxury_v4"></script>
+</body>
+</html>
