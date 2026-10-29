@@ -5,3 +5,4 @@ node_modules
 .ag_buf.txt
 *.log
 AGENTS.md
+.vercel
